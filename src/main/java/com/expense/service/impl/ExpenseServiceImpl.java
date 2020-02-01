@@ -28,11 +28,11 @@ public class ExpenseServiceImpl implements ExpenseService {
 	@Override
 	public Expense saveExpense(Expense expense) {
 		
-		//Buggy Code(ExpenseServiceTest.saveExpenseTest())
-		//expense.setAmount(2000.00);
-		//return expense;
+		Buggy Code(ExpenseServiceTest.saveExpenseTest())
+		expense.setAmount(2000.00);
+		return expense;
 		
-		//Correct Code
+		Correct Code
 		return expenseRepository.save(expense);
 	}
 
