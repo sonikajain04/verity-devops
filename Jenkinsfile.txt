@@ -5,11 +5,8 @@ pipeline {
 		
 		// *****ALL CODE TO BE ADDED BELOW THIS COMMENT*****
 		
-	
-// *****ALL CODE TO BE ADDED BELOW THIS COMMENT*****
-		
 			
-	//Code starts for stage Clean
+		//Code starts for stage Clean
         stage('Clean') {
             steps {
                 sh 'mvn clean'
@@ -96,7 +93,7 @@ pipeline {
 		stage('System Test') {
             steps {
 				//Change git url below as per your forked github repository URL
-				git url: 'https://github.com/JeeKayPee/EMSystemTests.git'
+				git url: 'https://github.com/sonikajain04/EMSystemTests.git'
             	sh 'mvn -Dtest=ExpenseManagerSystemTest test'
             }
         }
